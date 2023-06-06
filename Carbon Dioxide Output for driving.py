@@ -6,9 +6,9 @@ typesofproducts = int(input("How many different products are you moving? "))#ask
 productlist = []#makes a list so we can save each product as a sepearate variable
 for i in range(typesofproducts):
     name = input(f"What is the name of the product number {i+1}? ") #asks the name of each product then it loops and asks the question differently depending on the loop number
-    num = float(input("How much does one weigh in g? "))#asks for the mass of one product
-    num2 = float(input("How many products are there of that type? "))#asks how many products there are
-    num3 = float(input("How far has it gone in miles? "))#asks how far it has gone in miles
+    num = float(input(f"How much does one {name} weigh in g? "))#asks for the mass of one product
+    num2 = float(input(f"How many {name}s are there of that type? "))#asks how many products there are
+    num3 = float(input(f"How far has the {name} gone in miles? "))#asks how far it has gone in miles
     num = math.ceil(num)
     num2 = math.ceil(num2)
     num3 = math.ceil(num3)#these round the numbers
